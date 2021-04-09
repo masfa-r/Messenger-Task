@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Chat Box</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+        integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="chat-box-icon" onclick="Open()">
+        <button><img src="images/img_avatar2.png" alt="image"></button>
+    </div>
+
+    <!-- Main Container -->
+    <div class="chat-box-container" id="main">
+        <!-- Header -->
+        <div class="chat-header">
+            <div class="left-icon">
+                <img src="images/img_avatar2.png" alt="image">
+                <i class="fas fa-circle"></i>
+                <div class="avatar-detail">
+                    <h4>Masfa Rafi</h4>
+                    <h6>Active now</h6>
+                </div>
+            </div>
+            <div class="right-icons">
+                <div class="video-icon">
+                    <i class="fas fa-video"></i>
+                    <i class="fas fa-circle"></i>
+                </div>
+                <i class="fas fa-phone-alt"></i>
+                <i class="fas fa-cog"></i>
+                <i class="fas fa-times close-btn" onclick="Close()"></i>
+            </div>
+        </div>
+
+        <!-- Chat Area -->
+
+        <div class="chat-area">
+            <div class="message-sent-con">
+                <div class="left-icon chat-area-avatar">
+                    <img src="images/img_avatar2.png" alt="image">
+                    <span class="tooptip">
+                        Masfa Rafi-Friday, 9 April 2021
+                    </span>
+                </div>
+                <div class="message-sent">
+                    <p class="msg">Lorem ipsum dolor sit amet adipisicing elit. Recusandae, ut.
+                        Lorem ipsum dolor sit amet.
+                    </p>
+                    <p class="msg-hover"> 
+                        <i class="fas fa-smile"></i>
+                        <i class="far fa-share-square"></i>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </p>
+                </div>
+            </div>
+
+            <div class="message-receive-con">
+                <div class="message-receive">
+                    <p class="msg-hover"> 
+                        <i class="fas fa-smile"></i>
+                        <i class="far fa-share-square"></i>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </p>
+                    <p>Lorem ipsum dolor sit.</p>
+                  
+                </div>
+            </div>
+            <div class="message-receive-con">
+                <div class="message-receive bg">
+                    <p class="msg-hover"> 
+                        <i class="fas fa-smile"></i>
+                        <i class="far fa-share-square"></i>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </p>
+                    <p>Lorem ipsum  sit.</p>
+                    
+                </div>
+            </div>
+
+            <div class="message-sent-con">
+                <div class="left-icon chat-area-avatar">
+                    <img src="images/img_avatar2.png" alt="image">
+                    <span class="tooptip">
+                        Masfa Rafi-Friday, 9 April 2021
+                    </span>
+                </div>
+                <div class="message-sent">
+                    <p>Lorem ipsum dolor sit amet consectetur.
+                    </p>
+                    <p class="msg-hover"> 
+                        <i class="fas fa-smile"></i>
+                        <i class="far fa-share-square"></i>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </p>
+                </div>
+            </div>
+
+                <div class="message-receive-con">
+                    <div class="message-receive">
+                        <p class="msg-hover"> 
+                            <i class="fas fa-smile"></i>
+                            <i class="far fa-share-square"></i>
+                            <i class="fas fa-ellipsis-v"></i>
+                        </p>
+                        <p>Lorem consectetur elit.</p>
+                    </div>
+                </div>
+
+                <div class="message-sent-con">
+                    <div class="left-icon chat-area-avatar">
+                        <img src="images/img_avatar2.png" alt="image">
+                        <span class="tooptip">
+                            Masfa Rafi-Friday, 9 April 2021
+                        </span>
+                    </div>
+                    <div class="message-sent">
+                       <div class="image-msg">
+                           <img src="images/Top-15-CSS-Books.jpg" alt="">
+                       </div>
+                       <p class="img-share">
+                        <i class="far fa-share-square"></i>
+                       </p>
+                        <p class="msg-hover"> 
+                            <i class="fas fa-smile"></i>
+                            <i class="fas fa-ellipsis-v"></i>
+                        </p>
+                    </div>
+                </div>
+                
+
+                <div class="message-receive-con">
+                    <div class="message-receive">
+                        <p class="msg-hover"> 
+                            <i class="fas fa-smile"></i>
+                            <i class="far fa-share-square"></i>
+                            <i class="fas fa-ellipsis-v"></i>
+                        </p>
+                        <p>Hello Lorem ipsum dolor sit amet.</p>
+                        <h6 class="tick-time"><i class="fas fa-check"></i><time>Seen 10:54 PM</time></h6>
+                        
+                    </div>
+                </div>
+
+        </div>
+
+
+        <div class="chat-box-input">
+            <textarea name="text"  id="" cols="30" rows="10" placeholder="Type a message..."></textarea>
+
+        </div>
+
+        <div class="chat-footer">
+            <div class="ft-left">
+                <i class="far fa-images"></i>
+                <i class="far fa-sticky-note"></i>
+                <i class="fas fa-smile"></i>
+                <i class="fas fa-plus"></i>
+                <!-- <i class="fas fa-minus"></i> -->
+                <i class="fas fa-paperclip"></i>
+                <i class="fas fa-camera"></i>
+
+            </div>
+            <div class="ft-right">
+                <i class="fas fa-thumbs-up"></i>
+            </div>
+
+            
+        </div>
+
+        <script>
+            function Open() {
+              document.getElementById("main").style.display = "block";
+            }
+            function Close() {
+              document.getElementById("main").style.display = "none";
+            }
+            </script>
+
+</body>
+
+</html>
