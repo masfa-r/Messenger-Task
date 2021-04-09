@@ -19,17 +19,15 @@
 .chat-box-icon button > img{
     height: 45px;
     width: 45px;
+    cursor: pointer;
 }
-.chat-box-container{
-    position: fixed;
-    bottom: 50px;
-}
-.chat-box-icon i{
+/* .chat-box-icon i{
     font-size: 40px;
    background-color: linear-gradient(rgb(93, 93, 223), blue); 
     color: #0084ff; 
-} 
+}  */
 .chat-box-container{
+    position: fixed;
     width: 325px;
     height: 480px;
     border-radius: 15px 15px 0 0;
@@ -37,6 +35,8 @@
     bottom: 5px;
     right: 65px;
     opacity: 1;
+    z-index: 100;
+    background-color: white;
 }
 
 #main{
@@ -155,16 +155,17 @@ i.close-btn{
     position: relative;
 }
 .tooptip{
-    width: 210px;
+    width: 180px;
   position: absolute;
   bottom: 9px;
   left:35px;
   text-align: center;
-  border-top-left-radius: 8px;
+  border-top-left-radius: 10px;
   background-color: rgba(10, 10, 10,0.8);
   color: white;
   opacity: 0;
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: 400;
   padding: 5px 2px;
 }
 .chat-area-avatar:hover .tooptip{
@@ -261,6 +262,8 @@ border-radius: 25px;
     justify-content: flex-end;
     margin: 0 10px;
     color: gray;
+    font-size: 12px;
+    font-weight: lighter;
 }
 .tick-time > i{
     padding: 2px;
@@ -295,13 +298,13 @@ i:hover{
         margin: auto;
         height: 85vh;
         right: 5px;
+        
     }
     .chat-box-icon{
         position: fixed;
         top: 10px;
         height: 5vh;
         right: 5px; 
-    }
-    
+    }    
 }
 
